@@ -136,11 +136,20 @@ public class ImageProcess {
                 // please add your code here
                 // start of your code (take as many lines as you need)
                 // 1. create CollectionSort object 
-                
+                CollectionSort<Integer> collectionSort = new CollectionSort<>();
+
                 // 2. pass intensity_r[] to the CollectionSort object   
                 
                 // 3. call quickSort() from CollectionSort object
-                
+                collectionSort.setArray(intensity_r);
+                collectionSort.quickSort();
+                intensity_r = collectionSort.array;
+                collectionSort.setArray(intensity_g);
+                collectionSort.quickSort();
+                intensity_g = collectionSort.array;
+                collectionSort.setArray(intensity_b);
+                collectionSort.quickSort();
+                intensity_b = collectionSort.array;
                 // 4. do steps 2 and 3 for intensity_g and intensity_b                                
                 
                 // end of your code
